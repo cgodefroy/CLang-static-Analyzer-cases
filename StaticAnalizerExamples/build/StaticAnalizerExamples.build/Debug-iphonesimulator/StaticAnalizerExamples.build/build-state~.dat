@@ -1,0 +1,305 @@
+TStaticAnalizerExamples
+v7
+r0
+t274725029.982805
+cCheck dependencies
+cProcessInfoPlistFile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/Info.plist StaticAnalizerExamples-Info.plist
+cCompileXIB /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/MainWindow.xib
+cProcessPCH /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch.gch StaticAnalizerExamples_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch.pth StaticAnalizerExamples_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cCompileC build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/main.o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamplesAppDelegate.o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/BasicLeak.o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cAnalyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m
+cAnalyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m
+cLd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples normal i386
+cAnalyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m
+cGenerateDSYMFile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app.dSYM /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples
+cTouch /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk
+c000000004AA8ECE600000000000000EE
+t1252584678
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004A821911000000000026EE30
+t1250040081
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004A765094000000000027E880
+t1249267860
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004A7650820000000000001355
+t1249267842
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004A7C6E970000000000000788
+t1249668759
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004A7C6F5900000000016721E0
+t1249668953
+s23536096
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.h
+c000000004AAFC12300000000000000E7
+t1253032227
+s231
+i<Foundation/Foundation.h>
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m
+c000000004AAFC1210000000000000146
+t1253032225
+s326
+i"BasicLeak.h"
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.h
+c000000004AAFC0640000000000000170
+t1253032036
+s368
+i<UIKit/UIKit.h>
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m
+c000000004AAFC0640000000000000219
+t1253032036
+s537
+i"StaticAnalizerExamplesAppDelegate.h"
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/MainWindow.xib
+c000000004AAFC0640000000000001F9E
+t1253032036
+s8094
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples_Prefix.pch
+c000000004AAFC06400000000000000D5
+t1253032036
+s213
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app
+t1253032229
+s204
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app.dSYM
+t1253032229
+s102
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/Info.plist
+t1253032228
+s628
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/MainWindow.nib
+t1253032228
+s980
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/PkgInfo
+t1253032228
+s8
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples
+t1253032229
+s19340
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/BasicLeak.o
+t1253032229
+s7448
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamples.LinkFileList
+c000000004AAFC123000000000000024D
+t1253032227
+s589
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamplesAppDelegate.o
+t1253032229
+s17464
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/main.o
+t1253032229
+s6008
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalyzer/normal/i386/BasicLeak.plist
+t1253032229
+s5744
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalyzer/normal/i386/StaticAnalizerExamplesAppDelegate.plist
+t1253032229
+s275
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalyzer/normal/i386/main.plist
+t1253032229
+s275
+
+N/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m
+c000000004AAFC0640000000000000174
+t1253032036
+s372
+i<UIKit/UIKit.h>
+
+N/var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch.pth
+t1253032228
+s1727768
+
+N/var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch.gch
+t1253032229
+s13034960
+
+NStaticAnalizerExamples-Info.plist
+c000000004AAFC064000000000000038D
+t1253032036
+s909
+
+CAnalyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m
+s274725029.643871
+e274725029.682968
+r1
+xAnalyze
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m
+o/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:18:8:{18:8-18:15}: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+o         NSLog(message);
+o               ^~~~~~~
+o/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:16:22: warning: Potential leak of an object allocated on line 16 and stored into 'message'
+o         NSString *message = [[NSString alloc] initWithString:@"Hello World"];
+o                             ^
+o2 diagnostics generated.
+lSLF07#2@99"Analyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725029#274725029#0(567"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:18:8:{18:8-18:15}: warning: format string is not a string literal (potentially insecure) [-Wformat-security]         NSLog(message);               ^~~~~~~/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:16:22: warning: Potential leak of an object allocated on line 16 and stored into 'message'         NSString *message = [[NSString alloc] initWithString:@"Hello World"];                             ^2 diagnostics generated.1(0@74"Potential leak of an object allocated on line 16 and stored into 'message'274725029#18446744073709551615#0#5(17@0"274725029#18446744073709551615#0#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#0#0#0#0#0"0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#0#0#0#0#1(3@6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#15#2#15#2#6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#16#2#16#2#17@0"274725029#18446744073709551615#0#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#0#0#0#0#0"0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#0#0#0#0#1(3@6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#16#2#16#2#6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#16#22#16#69#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)274725029#18446744073709551615#0#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#16#22#0#0#0"1(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#16#22#16#69#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"274725029#18446744073709551615#0#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#0#0#0#0#0"0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#0#0#0#0#1(3@6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#16#22#16#69#6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#20#1#20#1#21@139"Object allocated on line 16 and stored into 'message' is no longer referenced after this point and has a retain count of +1 (object leaked)274725029#18446744073709551615#0#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#20#1#0#0#0"1(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#20#1#20#1#139"Object allocated on line 16 and stored into 'message' is no longer referenced after this point and has a retain count of +1 (object leaked)6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#20#1#0#0#36"Memory (Core Foundation/Objective-C)0(23"Leak of returned object0#0#91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m4300882208#2547"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -include /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch --analyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalyzer/normal/i386/BasicLeak.plist0#
+
+CAnalyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m
+s274725029.607809
+e274725029.643781
+r1
+xAnalyze
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m
+lSLF07#2@123"Analyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m274725029#274725029#0(0"0(0#0#115"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m30962526617534568#2595"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -include /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch --analyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalyzer/normal/i386/StaticAnalizerExamplesAppDelegate.plist0#
+
+CAnalyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m
+s274725029.544401
+e274725029.607708
+r1
+xAnalyze
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m
+lSLF07#2@86"Analyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m274725029#274725029#0(0"0(0#0#78"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m4300882208#2529"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -include /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch --analyze /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalyzer/normal/i386/main.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies274725027#274725027#0(0"0(0#1#0"4711725583731807232#0"0#
+
+CCompileC build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/BasicLeak.o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s274725029.543097
+e274725029.608936
+r1
+xCompileC
+xbuild/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/BasicLeak.o
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m: In function '-[BasicLeak init]':
+o/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:18: warning: format not a string literal and no format arguments
+o/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:20: warning: control reaches end of non-void function
+lSLF07#2@99"Compile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725029#274725029#0(429"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m: In function '-[BasicLeak init]':/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:18: warning: format not a string literal and no format arguments/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m:20: warning: control reaches end of non-void function2(22@51"Format not a string literal and no format arguments274725029#126#157#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#18#0#18#0#51"format not a string literal and no format arguments0(22@40"Control reaches end of non-void function274725029#283#146#0(6@91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m274725025#20#0#20#0#40"control reaches end of non-void function0(0#0#91"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m4300882208#2538"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -include /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch -c /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/BasicLeak.m -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/BasicLeak.o0#
+
+CCompileC build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamplesAppDelegate.o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s274725029.430468
+e274725029.544321
+r1
+xCompileC
+xbuild/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamplesAppDelegate.o
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@123"Compile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m274725029#274725029#0(0"0(0#0#115"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m4300882208#2586"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -include /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch -c /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamplesAppDelegate.o0#
+
+CCompileC build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/main.o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s274725029.429144
+e274725029.542919
+r1
+xCompileC
+xbuild/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/main.o
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m274725029#274725029#0(0"0(0#0#78"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m4300882208#2520"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -include /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch -c /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/main.m -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/MainWindow.xib
+s274725028.017249
+e274725028.359442
+r1
+xCompileXIB
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/MainWindow.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@25"CompileXIB MainWindow.xib274725028#274725028#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#86"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/MainWindow.xib4300882208#594"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/MainWindow.nib /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/MainWindow.xib0#
+
+CGenerateDSYMFile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app.dSYM /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples
+s274725029.913077
+e274725029.955750
+r1
+xGenerateDSYMFile
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app.dSYM
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples
+lSLF07#2@154"GenerateDSYMFile build/Debug-iphonesimulator/StaticAnalizerExamples.app.dSYM build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples274725029#274725029#0(0"0(0#0#149"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples4300882208#527"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app.dSYM0#
+
+CLd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples normal i386
+s274725029.609023
+e274725029.912969
+r1
+xLd
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples
+xnormal
+xi386
+lSLF07#2@154"Link /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples274725029#274725029#0(0"0(0#0#0"4300882208#1102"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -L/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -filelist /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/Objects-normal/i386/StaticAnalizerExamples.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/StaticAnalizerExamples0#
+
+CProcessInfoPlistFile /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/Info.plist StaticAnalizerExamples-Info.plist
+s274725027.980584
+e274725028.017133
+r1
+xProcessInfoPlistFile
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/Info.plist
+xStaticAnalizerExamples-Info.plist
+lSLF07#2@41"Process StaticAnalizerExamples-Info.plist274725028#274725028#0(0"0(0#0#105"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples-Info.plist19422263025926264#623"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility StaticAnalizerExamples-Info.plist -genpkginfo /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app/Info.plist0#
+
+CProcessPCH /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch.pth StaticAnalizerExamples_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s274725028.360555
+e274725028.999047
+r1
+xProcessPCH
+x/var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch.pth
+xStaticAnalizerExamples_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@44"Precompile StaticAnalizerExamples_Prefix.pch274725028#274725028#0(0"0(0#0#105"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples_Prefix.pch4300882208#2355"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fasm-blocks -mmacosx-version-min=10.5 -gdwarf-2 -fvisibility=hidden -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -c /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples_Prefix.pch -o /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-ahsvuenlnnchtiecyyviaxxkgjcv/StaticAnalizerExamples_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch.gch StaticAnalizerExamples_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s274725028.359593
+e274725029.429009
+r1
+xProcessPCH
+x/var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch.gch
+xStaticAnalizerExamples_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@44"Precompile StaticAnalizerExamples_Prefix.pch274725028#274725029#0(0"0(0#0#105"/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples_Prefix.pch4300882208#2364"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-generated-files.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-own-target-headers.hmap -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-all-target-headers.hmap -iquote /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/StaticAnalizerExamples-project-headers.hmap -F/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/include -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources/i386 -I/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/StaticAnalizerExamples.build/Debug-iphonesimulator/StaticAnalizerExamples.build/DerivedSources -c /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples_Prefix.pch -o /var/folders/M+/M+x07Df0F94FIWw68r8aRk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticAnalizerExamples_Prefix-dxsecyoagszzrzexwdvvnlyarhkn/StaticAnalizerExamples_Prefix.pch.gch0#
+
+CTouch /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app
+s274725029.955840
+e274725029.982735
+r1
+xTouch
+x/Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app
+lSLF07#2@132"Touch /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app274725029#274725029#0(0"0(0#0#0"4300882208#359"    cd /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/cyril/Projets/CLang-static-Analyzer-cases/StaticAnalizerExamples/build/Debug-iphonesimulator/StaticAnalizerExamples.app0#
+
