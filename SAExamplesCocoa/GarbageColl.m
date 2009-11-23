@@ -15,7 +15,7 @@
 {
 	CFPropertyListRef matchStyle = CFPreferencesCopyAppValue(CFSTR("PBXFindMatchStyle"), CFSTR("com.apple.Xcode"));
 	return [(id)matchStyle autorelease];
-	//return [(id)CFMakeCollectable(matchStyle) autorelease];
+	
 }
 
 @end

@@ -10,7 +10,6 @@
 #import "AppController.h"
 
 
-
 @interface AppController (PrivateMethods)
 
 
@@ -33,10 +32,8 @@ static AppController *_controller = nil;
 
 
 //NS_RETURNS_RETAINED
-// Objects loaded from a *.(nib|xib) are inited with: - (id)initWithCoder:(NSCoder *)inCoder;
 
-+ (id)controller 
-{
++ (id)controller {
 	@synchronized(self) {
         if (_controller == nil) {
             [[self alloc] init]; // assignment not done here
@@ -47,16 +44,16 @@ static AppController *_controller = nil;
 
 
 /*
- + (void)initialize
++ (void)initialize
  {
- static BOOL initialized = NO;
+	static BOOL initialized = NO;
  
- NSLog(@"%s", _cmd);
+	 NSLog(@"%s", _cmd);
  
- if (!initialized) {
- initialized = YES;
- _controller = [[self alloc] init];
- }
+	 if (!initialized) {
+		 initialized = YES;
+		 _controller = [[self alloc] init];
+	 }
  }
  */
 
@@ -89,17 +86,20 @@ static AppController *_controller = nil;
     return UINT_MAX;  //denotes an object that cannot be released
 }
 
-- (void)release
-{
+- (void)release{
     //do nothing
 }
 
-- (id)autorelease
-{
+- (id)autorelease{
     return self;
 }
 
-
+- (NSString*) returnsRetained {
+	return [[NSString alloc] initWithCString:"no leak here"];
+}
+- (NSString*) alsoReturnsRetained {
+	return [[NSString alloc] initWithCString:"flag a leak"];
+}
 
 - (id)init
 {

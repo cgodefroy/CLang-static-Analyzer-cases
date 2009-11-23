@@ -61,18 +61,18 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F165A4D6105FF838005A112D /* BasicLeak.h */,
+				F165A4D7105FF838005A112D /* BasicLeak.m */,
+				F1251A9A106171C900230A19 /* OverRelease.m */,
 				1D3623240D0F684500981E51 /* StaticAnalizerExamplesAppDelegate.h */,
 				1D3623250D0F684500981E51 /* StaticAnalizerExamplesAppDelegate.m */,
 				F165A4E4105FF97D005A112D /* CodeFlow.h */,
 				F165A4E5105FF97D005A112D /* CodeFlow.m */,
-				F165A4D6105FF838005A112D /* BasicLeak.h */,
-				F165A4D7105FF838005A112D /* BasicLeak.m */,
-				F165A4EA105FFAA1005A112D /* FridayQA.m */,
 				F165A4F3105FFC52005A112D /* September.h */,
 				F165A4F4105FFC52005A112D /* September.m */,
 				F165A4FE105FFD92005A112D /* CocoaHeads.h */,
 				F165A4FF105FFD92005A112D /* CocoaHeads.m */,
-				F1251A9A106171C900230A19 /* OverRelease.m */,
+				F165A4EA105FFAA1005A112D /* FridayQA.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

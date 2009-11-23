@@ -9,18 +9,7 @@
 //#import <PreferencePanes/NSPreferencePane.h>
 //#import <Cocoa/Cocoa.h>
 
-
-#ifndef __has_feature      // Optional.
-#define __has_feature(x) 0 // Compatibility with non-clang compilers.
-#endif
-
-#ifndef NS_RETURNS_RETAINED
-#if __has_feature(attribute_ns_returns_retained)
-#define NS_RETURNS_RETAINED __attribute__((ns_returns_retained))
-#else
-#define NS_RETURNS_RETAINED
-#endif
-#endif
+//NS_RETURNS_RETAINED
 
 
 @interface AppController: NSObject /*: NSPreferencePane*/ {
@@ -29,4 +18,7 @@
 
 
 + (id) controller ;
+- (NSString*) returnsRetained ;
+- (NSString*) alsoReturnsRetained;
+
 @end
