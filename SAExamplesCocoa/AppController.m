@@ -42,6 +42,8 @@ static AppController *_controller = nil;
     return _controller;
 }
 
+// Another false positive: this object is retained because it is here for the length of the app.
+
 
 /*
 + (void)initialize
@@ -97,6 +99,10 @@ static AppController *_controller = nil;
 - (NSString*) returnsRetained {
 	return [[NSString alloc] initWithCString:"no leak here"];
 }
+//If you rename this method to allcReturnsRetained, it won't appear as a bug
+
+
+
 - (NSString*) alsoReturnsRetained {
 	return [[NSString alloc] initWithCString:"flag a leak"];
 }

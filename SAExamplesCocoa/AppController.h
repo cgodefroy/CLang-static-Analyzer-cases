@@ -16,9 +16,11 @@
 
 }
 
+// Two solutions
+// Either add an NS_RETURNS_RETAINED here or rename the method
 
 + (id) controller ;
-- (NSString*) returnsRetained NS_RETURNS_RETAINED;
+- (NSString*) returnsRetained;
 - (NSString*) alsoReturnsRetained;
 
 @end

@@ -1,32 +1,5 @@
 // !$*UTF8*$!
 {
-	1D3623240D0F684500981E51 /* StaticAnalizerExamplesAppDelegate.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = StaticAnalizerExamplesAppDelegate.h;
-		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 368}";
-		};
-	};
-	1D3623250D0F684500981E51 /* StaticAnalizerExamplesAppDelegate.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = StaticAnalizerExamplesAppDelegate.m;
-		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/StaticAnalizerExamplesAppDelegate.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 537}";
-			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
-		};
-	};
 	1D6058900D05DD3D006BFB54 /* StaticAnalizerExamples */ = {
 		activeExec = 0;
 		executables = (
@@ -149,81 +122,12 @@
 			PBXWorkspaceStateSaveDate = 280746859;
 		};
 		perUserProjectItems = {
-			F10D284110BB28E200F3DA33 = F10D284110BB28E200F3DA33 /* PBXTextBookmark */;
-			F10D284210BB28E200F3DA33 = F10D284210BB28E200F3DA33 /* PBXTextBookmark */;
-			F10D284310BB28E200F3DA33 = F10D284310BB28E200F3DA33 /* PBXTextBookmark */;
-			F10D284410BB28E200F3DA33 = F10D284410BB28E200F3DA33 /* PBXTextBookmark */;
-			F10D284510BB28E200F3DA33 = F10D284510BB28E200F3DA33 /* PBXTextBookmark */;
-			F10D284610BB28E200F3DA33 = F10D284610BB28E200F3DA33 /* PBXTextBookmark */;
-			F1251A9E1061736600230A19 = F1251A9E1061736600230A19 /* PlistBookmark */;
-			F165A515105FFFF2005A112D = F165A515105FFFF2005A112D /* PBXTextBookmark */;
-			F18DF0CA10BABE7100CEE7FB = F18DF0CA10BABE7100CEE7FB /* PBXTextBookmark */;
-			F18DF0CB10BABE7100CEE7FB = F18DF0CB10BABE7100CEE7FB /* PBXTextBookmark */;
-			F18DF0CE10BABE7100CEE7FB = F18DF0CE10BABE7100CEE7FB /* PBXTextBookmark */;
+			F1251A9E1061736600230A19 /* PlistBookmark */ = F1251A9E1061736600230A19 /* PlistBookmark */;
+			F1F7D7E710BBE42A007ED93F /* PlistBookmark */ = F1F7D7E710BBE42A007ED93F /* PlistBookmark */;
 		};
 		sourceControlManager = F165A4D3105FF7EC005A112D /* Source Control */;
 		userBuildSettings = {
 		};
-	};
-	F10D284110BB28E200F3DA33 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4D7105FF838005A112D /* BasicLeak.m */;
-		name = "BasicLeak.m: 17";
-		rLen = 0;
-		rLoc = 373;
-		rType = 0;
-		vrLen = 216;
-		vrLoc = 50;
-	};
-	F10D284210BB28E200F3DA33 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* StaticAnalizerExamplesAppDelegate.m */;
-		name = "StaticAnalizerExamplesAppDelegate.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 292;
-		vrLoc = 0;
-	};
-	F10D284310BB28E200F3DA33 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4F4105FFC52005A112D /* September.m */;
-		name = "September.m: 37";
-		rLen = 0;
-		rLoc = 850;
-		rType = 0;
-		vrLen = 518;
-		vrLoc = 438;
-	};
-	F10D284410BB28E200F3DA33 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4FF105FFD92005A112D /* CocoaHeads.m */;
-		name = "CocoaHeads.m: 15";
-		rLen = 0;
-		rLoc = 207;
-		rType = 0;
-		vrLen = 207;
-		vrLoc = 0;
-	};
-	F10D284510BB28E200F3DA33 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4EA105FFAA1005A112D /* FridayQA.m */;
-		name = "FridayQA.m: 23";
-		rLen = 0;
-		rLoc = 516;
-		rType = 0;
-		vrLen = 240;
-		vrLoc = 381;
-	};
-	F10D284610BB28E200F3DA33 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4EA105FFAA1005A112D /* FridayQA.m */;
-		name = "FridayQA.m: 23";
-		rLen = 0;
-		rLoc = 516;
-		rType = 0;
-		vrLen = 3;
-		vrLoc = 0;
 	};
 	F1251A9A106171C900230A19 /* OverRelease.m */ = {
 		uiCtxt = {
@@ -326,112 +230,29 @@
 			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
 		};
 	};
-	F165A4F3105FFC52005A112D /* September.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = September.h;
-		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/September.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 227}";
-		};
-	};
-	F165A4F4105FFC52005A112D /* September.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = September.m;
-		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/September.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{850, 0}";
-			sepNavVisRange = "{0, 996}";
-			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
-		};
-	};
-	F165A4FE105FFD92005A112D /* CocoaHeads.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = CocoaHeads.h;
-		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/CocoaHeads.h";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 229}";
-		};
-	};
-	F165A4FF105FFD92005A112D /* CocoaHeads.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = CocoaHeads.m;
-		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/CocoaHeads.m";
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{207, 0}";
-			sepNavVisRange = "{0, 207}";
-			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
-		};
-	};
-	F165A515105FFFF2005A112D /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4F3105FFC52005A112D /* September.h */;
-		name = "September.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 227;
-		vrLoc = 0;
-	};
-	F18DF0CA10BABE7100CEE7FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4D6105FF838005A112D /* BasicLeak.h */;
-		name = "BasicLeak.h: 15";
-		rLen = 0;
-		rLoc = 222;
-		rType = 0;
-		vrLen = 231;
-		vrLoc = 0;
-	};
-	F18DF0CB10BABE7100CEE7FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* StaticAnalizerExamplesAppDelegate.h */;
-		name = "StaticAnalizerExamplesAppDelegate.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 368;
-		vrLoc = 0;
-	};
-	F18DF0CE10BABE7100CEE7FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F165A4FE105FFD92005A112D /* CocoaHeads.h */;
-		name = "CocoaHeads.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 229;
-		vrLoc = 0;
-	};
 	F1F7D78A10BBDE59007ED93F /* Track.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 1287}}";
-			sepNavSelRange = "{576, 0}";
-			sepNavVisRange = "{0, 707}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 1196}}";
+			sepNavSelRange = "{1732, 0}";
+			sepNavVisRange = "{842, 1308}";
 		};
 	};
 	F1F7D78B10BBDE59007ED93F /* Track.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {4128, 9191}}";
-			sepNavSelRange = "{25212, 0}";
-			sepNavVisRange = "{0, 988}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 7722}}";
+			sepNavSelRange = "{9741, 0}";
+			sepNavVisRange = "{18307, 1313}";
 		};
+	};
+	F1F7D7E710BBE42A007ED93F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* StaticAnalizerExamples-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/StaticAnalizerExamples-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 }
