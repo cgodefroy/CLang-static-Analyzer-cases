@@ -1,0 +1,4 @@
+This is a set of buggy code demonstrating the usage of Clang Static Analyzer, the checks that are made, how it integrates into XCode 3.2.
+There are two XCode projects in there: one is an iPhone 3 project, the other a 10.5+ project.
+
+Please feel free to fork and send pull requests to add comments and other examples
