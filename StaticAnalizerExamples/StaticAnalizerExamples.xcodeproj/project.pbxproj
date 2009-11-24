@@ -16,6 +16,9 @@
 		F165A4D8105FF838005A112D /* BasicLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4D7105FF838005A112D /* BasicLeak.m */; };
 		F165A4E6105FF97D005A112D /* CodeFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4E5105FF97D005A112D /* CodeFlow.m */; };
 		F165A4EB105FFAA1005A112D /* FridayQA.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4EA105FFAA1005A112D /* FridayQA.m */; };
+		F1F7D78C10BBDE59007ED93F /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7D78B10BBDE59007ED93F /* Track.m */; };
+		F1F7D7A610BBDF65007ED93F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7D7A510BBDF65007ED93F /* CoreLocation.framework */; };
+		F1F7D7BE10BBE01E007ED93F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7D7BD10BBE01E007ED93F /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,10 @@
 		F165A4E4105FF97D005A112D /* CodeFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeFlow.h; sourceTree = "<group>"; };
 		F165A4E5105FF97D005A112D /* CodeFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeFlow.m; sourceTree = "<group>"; };
 		F165A4EA105FFAA1005A112D /* FridayQA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridayQA.m; sourceTree = "<group>"; };
+		F1F7D78A10BBDE59007ED93F /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		F1F7D78B10BBDE59007ED93F /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		F1F7D7A510BBDF65007ED93F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F1F7D7BD10BBE01E007ED93F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				F1F7D7A610BBDF65007ED93F /* CoreLocation.framework in Frameworks */,
+				F1F7D7BE10BBE01E007ED93F /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +67,8 @@
 				F165A4E4105FF97D005A112D /* CodeFlow.h */,
 				F165A4E5105FF97D005A112D /* CodeFlow.m */,
 				F165A4EA105FFAA1005A112D /* FridayQA.m */,
+				F1F7D78A10BBDE59007ED93F /* Track.h */,
+				F1F7D78B10BBDE59007ED93F /* Track.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -78,6 +89,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				F1F7D7BD10BBE01E007ED93F /* libsqlite3.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -105,6 +117,7 @@
 			children = (
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				F1F7D7A510BBDF65007ED93F /* CoreLocation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
@@ -168,6 +181,7 @@
 				F165A4E6105FF97D005A112D /* CodeFlow.m in Sources */,
 				F165A4EB105FFAA1005A112D /* FridayQA.m in Sources */,
 				F1251A9B106171C900230A19 /* OverRelease.m in Sources */,
+				F1F7D78C10BBDE59007ED93F /* Track.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
