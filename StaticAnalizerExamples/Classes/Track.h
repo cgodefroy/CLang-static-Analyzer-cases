@@ -78,14 +78,11 @@
 - (void)updateMaxSpeed;
 
 - (int) calculateCalories;
-- (NSTimeInterval)calculateTotalTimeOld;
 - (NSTimeInterval)calculateTotalTime;
 - (NSString*) totalTimeAsString;
 - (void)resetDistanceAndSpeed;
 
-- (NSString *)generateGPX;
-- (NSString *)generateKML;
-- (NSString *)pointsAsPath;
+
 - (NSMutableArray *)generatePointSeries;
 
 @end

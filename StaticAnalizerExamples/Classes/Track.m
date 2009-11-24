@@ -228,12 +228,7 @@ static sqlite3_stmt *dehydrate_statement = nil;
 }
 
 - (void)setStartTime {
-	NSDate *today = [[NSDate alloc] init];
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init]  ;
-	[formatter setDateFormat:@"yyyy-MM-dd' 'HH:mm:ss"];
-	[self setDate:[formatter stringFromDate:today]];
-	[formatter release];
-	[today release];
+	
 }
 
 - (NSDate *)startTime{
@@ -271,27 +266,7 @@ static sqlite3_stmt *dehydrate_statement = nil;
 
 - (float)calculateDistance{
 	if (distance>0) return distance;
-	float newDistance = 0;
-	int max = [trackpoints count]-1;
-	//NSLog([NSString stringWithFormat:@"Max number of trackpoints is %i", max]);
-	
-	// Only registered 1 or less(?!) trackpoints
-	if(max < 1 ){
-		return 0;
-	}
-	
-	for(int i=0;i< max;i++){
-		double lat1 = [[[trackpoints objectAtIndex:i] latitude] doubleValue];
-		double lat2 = [[[trackpoints objectAtIndex:i+1] latitude] doubleValue];
-		double lon1 = [[[trackpoints objectAtIndex:i] longitude] doubleValue];
-		double lon2 = [[[trackpoints objectAtIndex:i+1] longitude] doubleValue];
-		
-		CLLocation *oldLoc = [[CLLocation alloc] initWithLatitude:lat1 longitude:lon1];
-		CLLocation *newLoc = [[CLLocation alloc] initWithLatitude:lat2 longitude:lon2];
-		newDistance += [newLoc getDistanceFrom:oldLoc];
-		[oldLoc release];
-		[newLoc release];
-	}
+	float newDistance = 1.0f;
 	distance = newDistance;
 	[self save];
 	return newDistance ;
@@ -316,31 +291,7 @@ static sqlite3_stmt *dehydrate_statement = nil;
 }
 
 - (float)calculateSpeed{
-	if (speed == 0 || speed == INFINITY) {
-		if([(TrainerAppDelegate*)[[UIApplication sharedApplication] delegate] isLite]){
-			totalTime = [self calculateTotalTime];
-			speed = distance/totalTime;
-			[self save];
-			return speed;
-		}
-		if( [trackpoints count]<=0) return 0;
-		TrackPoint *firstPoint = [self.trackpoints objectAtIndex:0];
-		TrackPoint *lastPoint = [self.trackpoints lastObject];
-		NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-		[formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
-		[formatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
-		
-		NSString *firstPointString = firstPoint.time;
-		NSString *lastPointString = lastPoint.time;
-		
-		NSDate *firstTime = [formatter dateFromString:firstPointString];
-		NSDate *lastTime = [formatter dateFromString:lastPointString];
-		totalTime = [lastTime timeIntervalSinceDate:firstTime]; 
-		[formatter release];
-		
-		speed = (float)distance/(float)totalTime;
-		[self save];
-	}
+
 	return speed;
 }
 
@@ -399,6 +350,10 @@ static sqlite3_stmt *dehydrate_statement = nil;
 		TrackPoint *currentPoint = (TrackPoint *)point;
 		currentPointString = currentPoint.time;
 		currentTime = [formatter dateFromString:currentPointString];
+		
+		// Dead Store here: it means this variable is never used.
+		// Why is it there? is it an error, code that changed? You have to do something about it.
+		
 		timeElapsed = [currentTime timeIntervalSinceDate:firstTime];
 		aLatitude = [[currentPoint latitude] doubleValue];
 		aLongitude = [[currentPoint longitude] doubleValue];
@@ -503,22 +458,7 @@ static sqlite3_stmt *dehydrate_statement = nil;
 }
 
 
-- (NSTimeInterval)calculateTotalTimeOld{
-	[self checkAndHydrate];
-	if( [trackpoints count] == 0) return 0;
-	TrackPoint *firstPoint = [trackpoints objectAtIndex:0];
-	TrackPoint *lastPoint = [trackpoints lastObject];
-	NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
-	[formatter setTimeZone:[NSTimeZone timeZoneWithName:@"GMT"]];
-	
-	NSString *firstPointString = firstPoint.time;
-	NSString *lastPointString = lastPoint.time;
-	NSDate *firstTime = [formatter dateFromString:firstPointString];
-	NSDate *lastTime = [formatter dateFromString:lastPointString];
-	[formatter release];
-	return [lastTime timeIntervalSinceDate:firstTime];
-}
+
 
 - (NSTimeInterval) calculateTotalTime{
 	NSTimeInterval duration = [[self endTime] timeIntervalSinceDate:[self startTime]];
@@ -541,76 +481,7 @@ static sqlite3_stmt *dehydrate_statement = nil;
 #pragma mark -
 #pragma mark Export methods
 
-- (NSString *)generateGPX{
-	
-	NSString *XMLContainer = @"<?xml version=\"1.0\" standalone=\"yes\"?><gpx version=\"1.0\" creator=\"iPhoneTracker\"	xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://www.topografix.com/GPX/1/0\"	xmlns:topografix=\"http://www.topografix.com/GPX/Private/TopoGrafix/0/2\" xsi:schemaLocation=\"http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/2 http://www.topografix.com/GPX/Private/TopoGrafix/0/2/topografix.xsd\"> <trk><name><![CDATA[%@]]></name>	<trkseg>	%@	</trkseg></trk> </gpx>";
-	int max = [[self trackpoints] count];
-	if(max<1){return @"";}
-	// One point  = approximately 97 letters
-	NSMutableString *trackString = [[[NSMutableString alloc] initWithCapacity:97*max] autorelease];
-	for (int i=0; i<max;i++){
-		TrackPoint *point =[[self trackpoints] objectAtIndex:i];
-		NSMutableString *newTrackPoint = [NSMutableString stringWithFormat:@"<trkpt lat=\"%.6f\" lon=\"%.6f\"><ele>%.4f</ele><time>%@</time></trkpt>", 
-										  [[point latitude] floatValue], [[point longitude] floatValue], [[point altitude] floatValue], [point time]];
-		[trackString appendString:newTrackPoint];
-	}
-	NSString *trackName = [NSString stringWithFormat:@"iPhone track from %@" , [[[self trackpoints] objectAtIndex:0] time]];
-	return [NSString stringWithFormat:XMLContainer, trackName, trackString];
-}	
 
-- (NSString *) pointsAsPath{
-	/*Total	1750	
-	 Root URL	84	
-	 Reste	1666	
-	 
-	 Latitude	-127.1456	9 chars
-	 Virgule	,	1chars
-	 Longitude	-127.0987	9 chars
-	 Séparateur	|	1 chars
-	 Total 20 chars
-	 
-	 Nombre de coordonnées insertibles	83,3
-	 */
-	[self checkAndHydrate];
-	
-	float step;
-	if([[self trackpoints] count]<83) {
-		step = 1.f;
-	} else {
-		step = [[self trackpoints] count] / 83.f;
-	}
-	NSMutableString *trackString = [[[NSMutableString alloc] init] autorelease];
-	int k=0;
-	for (float i=0; i<[[self trackpoints] count]; i+=step){
-		k++;
-		TrackPoint *point =[[self trackpoints] objectAtIndex:(int)i];
-		NSMutableString *newTrackPoint = [NSMutableString stringWithFormat:@"%.4f,%.4f|", 
-										  [[point latitude] floatValue], [[point longitude] floatValue]];
-		[trackString appendString:newTrackPoint];
-	}
-	TrackPoint *point =[[self trackpoints] lastObject];
-	NSMutableString *newTrackPoint = [NSMutableString stringWithFormat:@"%.4f,%.4f", 
-									  [[point latitude] floatValue], [[point longitude] floatValue]];
-	[trackString appendString:newTrackPoint];
-	return trackString;
-}
-
-
-- (NSString *) generateKML{
-	[self checkAndHydrate];
-	NSString *XMLContainer = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?><kml xmlns=\"http://www.opengis.net/kml/2.2\"><Document><name>%@</name><Placemark><LineString><coordinates>%@</coordinates></LineString></Placemark></Document></kml>";
-	int max = [[self trackpoints] count];
-	if(max<1){return @"";}
-	NSMutableString *trackString = [[[NSMutableString alloc] initWithCapacity:97*max] autorelease];
-	for (int i=0; i<max;i++){
-		TrackPoint *point =[[self trackpoints] objectAtIndex:i];
-		NSMutableString *newTrackPoint = [NSMutableString stringWithFormat:@"%.6f,%.6f,%.4f ", 
-										  [[point longitude] floatValue], [[point latitude] floatValue], [[point altitude] floatValue]];
-		[trackString appendString:newTrackPoint];
-	}
-	NSString *trackName = [NSString stringWithFormat:@"iPhone track from %@" , [[[self trackpoints] objectAtIndex:0] time]];
-	return [NSString stringWithFormat:XMLContainer, trackName, trackString];
-}
 
 
 - (NSMutableArray *)generatePointSeries {
