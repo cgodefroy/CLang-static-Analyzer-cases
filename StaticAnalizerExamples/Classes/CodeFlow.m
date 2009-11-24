@@ -2,9 +2,13 @@
 //  CodeFlow.m
 //  StaticAnalizerExamples
 //
-//  Created by Cyril Godefroy on 15/09/09.
-//  Copyright 2009 eCOMPOSITE. All rights reserved.
-//  [TODO] credit URL where I found that code very first hit for Google "static analyzer xcode"
+//  Not Created by Cyril Godefroy on 15/09/09.
+
+
+//  http://iphonedevelopertips.com/xcode/static-code-analysis-clang-and-xcode-3-2.html
+
+/* Nice arrows heh? Shows an uninitialized variable bug all paths are
+ taken and csa tries all valid values of x, including =0 */
 
 #import "CodeFlow.h"
 

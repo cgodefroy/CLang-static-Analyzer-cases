@@ -16,8 +16,6 @@
 		F165A4D8105FF838005A112D /* BasicLeak.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4D7105FF838005A112D /* BasicLeak.m */; };
 		F165A4E6105FF97D005A112D /* CodeFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4E5105FF97D005A112D /* CodeFlow.m */; };
 		F165A4EB105FFAA1005A112D /* FridayQA.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4EA105FFAA1005A112D /* FridayQA.m */; };
-		F165A4F5105FFC52005A112D /* September.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4F4105FFC52005A112D /* September.m */; };
-		F165A500105FFD92005A112D /* CocoaHeads.m in Sources */ = {isa = PBXBuildFile; fileRef = F165A4FF105FFD92005A112D /* CocoaHeads.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +33,6 @@
 		F165A4E4105FF97D005A112D /* CodeFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeFlow.h; sourceTree = "<group>"; };
 		F165A4E5105FF97D005A112D /* CodeFlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeFlow.m; sourceTree = "<group>"; };
 		F165A4EA105FFAA1005A112D /* FridayQA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FridayQA.m; sourceTree = "<group>"; };
-		F165A4F3105FFC52005A112D /* September.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = September.h; sourceTree = "<group>"; };
-		F165A4F4105FFC52005A112D /* September.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = September.m; sourceTree = "<group>"; };
-		F165A4FE105FFD92005A112D /* CocoaHeads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHeads.h; sourceTree = "<group>"; };
-		F165A4FF105FFD92005A112D /* CocoaHeads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaHeads.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +57,6 @@
 				F1251A9A106171C900230A19 /* OverRelease.m */,
 				F165A4E4105FF97D005A112D /* CodeFlow.h */,
 				F165A4E5105FF97D005A112D /* CodeFlow.m */,
-				F165A4F3105FFC52005A112D /* September.h */,
-				F165A4F4105FFC52005A112D /* September.m */,
-				F165A4FE105FFD92005A112D /* CocoaHeads.h */,
-				F165A4FF105FFD92005A112D /* CocoaHeads.m */,
 				F165A4EA105FFAA1005A112D /* FridayQA.m */,
 			);
 			path = Classes;
@@ -177,8 +167,6 @@
 				F165A4D8105FF838005A112D /* BasicLeak.m in Sources */,
 				F165A4E6105FF97D005A112D /* CodeFlow.m in Sources */,
 				F165A4EB105FFAA1005A112D /* FridayQA.m in Sources */,
-				F165A4F5105FFC52005A112D /* September.m in Sources */,
-				F165A500105FFD92005A112D /* CocoaHeads.m in Sources */,
 				F1251A9B106171C900230A19 /* OverRelease.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

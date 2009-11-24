@@ -5,6 +5,10 @@
 //  Created by Cyril Godefroy on 16/09/09.
 //
 
+/* Example of Memory Error nr 2 : using an object after releasing it. 
+ Interesting example because it shows how paths are taken and how the analyser goes deep
+ */ 
+
 #import <Foundation/Foundation.h>
 
 void doSomething(NSUInteger count, NSArray *objects, NSString *string){

@@ -41,7 +41,6 @@
 			1D6058900D05DD3D006BFB54 /* StaticAnalizerExamples */,
 		);
 		breakpoints = (
-			F175910A10B7F7F80038BE0B /* OverRelease.m:23 */,
 		);
 		codeSenseManager = F165A4D4105FF7EC005A112D /* Code sense */;
 		executables = (
@@ -171,7 +170,7 @@
 		fRef = F165A4D7105FF838005A112D /* BasicLeak.m */;
 		name = "BasicLeak.m: 17";
 		rLen = 0;
-		rLoc = 245;
+		rLoc = 373;
 		rType = 0;
 		vrLen = 216;
 		vrLoc = 50;
@@ -229,8 +228,8 @@
 	F1251A9A106171C900230A19 /* OverRelease.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{475, 23}";
-			sepNavVisRange = "{0, 506}";
+			sepNavSelRange = "{257, 0}";
+			sepNavVisRange = "{0, 672}";
 			sepNavWindowFrame = "{{19, 0}, {1261, 773}}";
 		};
 	};
@@ -299,7 +298,7 @@
 	F165A4D7105FF838005A112D /* BasicLeak.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
-			sepNavSelRange = "{171, 0}";
+			sepNavSelRange = "{388, 0}";
 			sepNavVisRange = "{0, 394}";
 			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
 		};
@@ -313,9 +312,9 @@
 	};
 	F165A4E5105FF97D005A112D /* CodeFlow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {735, 449}}";
-			sepNavSelRange = "{439, 0}";
-			sepNavVisRange = "{0, 469}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
+			sepNavSelRange = "{256, 0}";
+			sepNavVisRange = "{0, 545}";
 			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
 		};
 	};
@@ -328,30 +327,54 @@
 		};
 	};
 	F165A4F3105FFC52005A112D /* September.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = September.h;
+		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/September.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {923, 343}}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 227}";
 		};
 	};
 	F165A4F4105FFC52005A112D /* September.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = September.m;
+		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/September.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {810, 572}}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
 			sepNavSelRange = "{850, 0}";
-			sepNavVisRange = "{438, 531}";
+			sepNavVisRange = "{0, 996}";
 			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
 		};
 	};
 	F165A4FE105FFD92005A112D /* CocoaHeads.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = CocoaHeads.h;
+		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/CocoaHeads.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {671, 455}}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 229}";
 		};
 	};
 	F165A4FF105FFD92005A112D /* CocoaHeads.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = CocoaHeads.m;
+		path = "/Users/cyril/Projets/clang/CLang-static-Analyzer-cases/StaticAnalizerExamples/Classes/CocoaHeads.m";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {507, 195}}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 645}}";
 			sepNavSelRange = "{207, 0}";
 			sepNavVisRange = "{0, 207}";
 			sepNavWindowFrame = "{{4, 0}, {796, 578}}";
@@ -366,23 +389,6 @@
 		rType = 0;
 		vrLen = 227;
 		vrLoc = 0;
-	};
-	F175910A10B7F7F80038BE0B /* OverRelease.m:23 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = F1251A9A106171C900230A19 /* OverRelease.m */;
-		functionName = "doSomething()";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 23;
-		modificationTime = 280492027.465191;
-		originalNumberOfMultipleMatches = 0;
-		state = 2;
 	};
 	F18DF0CA10BABE7100CEE7FB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

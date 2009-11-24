@@ -3,6 +3,9 @@
 //  StaticAnalizerExamples
 //
 
+/* First example of the most common problem newbies find in their code:
+ leaks. This one is easy to solve, just uncomment */
+
 #import "BasicLeak.h"
 
 
@@ -13,7 +16,7 @@
 	NSString *message = [[NSString alloc] initWithString:@"Hello World"];
 	
 	NSLog(@"%@",message);
-	[message release];
+	//[message release];
 	return self;
 }
 
