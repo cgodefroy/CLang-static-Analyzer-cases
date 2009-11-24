@@ -13,6 +13,7 @@
 	NSString *message = [[NSString alloc] initWithString:@"Hello World"];
 	
 	NSLog(@"%@",message);
+	[message release];
 	return self;
 }
 

@@ -18,7 +18,7 @@
 
 
 + (id) controller ;
-- (NSString*) returnsRetained ;
+- (NSString*) returnsRetained NS_RETURNS_RETAINED;
 - (NSString*) alsoReturnsRetained;
 
 @end
